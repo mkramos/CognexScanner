@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-cognexscanner",
+  "version": "0.0.1",
+  "description": "An Android Cordova plugin that allows users to scan barcodes using Cognex Barcode Scanner.",
+  "cordova": {
+    "id": "cordova-plugin-cognexscanner",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkramos/CognexScanner.git"
+  },
+  "keywords": [
+    "Toast",
+    "Notification",
+    "Message",
+    "Alert",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "MK Ramos <mkramos45@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkramos45/cognexscanner/issues"
+  },
+  "homepage": "https://github.com/mkramos45/cognexscanner/"
+}
