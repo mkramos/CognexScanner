@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cognexscanner" version="0.0.1">
+    <name>CognexScanner</name>
+
+    <description>An Android Cordova plugin that allows users to scan barcodes using Cognex Barcode Scanner.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,toast,message,alert</keywords>
+    <repo>https://github.com/mkramos/CognexScanner.git</repo>
+    <issue>https://github.com/mkramos/CognexScanner/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/cognexscanner.js" name="cognexscanner">
+        <clobbers target="window.plugins.cognexscanner" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CognexScanner">
+                <param name="android-package" value="com.mkramos.cordova.plugin.CognexScanner"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/MainActivity.java" target-dir="src/com/mkramos/cordova/plugin" />
+    </platform>
+</plugin>
